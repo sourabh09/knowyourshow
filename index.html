@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Know your show</title>
+ <!--  <meta name="robots" content="index, follow"> -->
+  <meta name="description" content="">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Titillium+Web:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-amber.min.css" />
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+  <!-- <link rel="apple-touch-icon" href="onthisday.png">
+  <link rel="shortcut icon" type="image/png" href="onthisday.png"> -->
+  <!-- <meta property="og:image" content="https://sourabh09.github.io/onthisday/onthisday.png"> -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD98TIgEeJkaKcioLj-s2hgbBeWCV1tUQE"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+   <div class="layout-foreground">
+
+    <div id="blurred-image-container">
+        <header>Know your show</header>
+        <div class="img-src"></div>
+        <div class="img-src blurred-image"></div>
+    </div>
+    <form onsubmit="getData()" action="javascript:void(0)">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" id="showname">
+    <label style="color:#FFF;"class="mdl-textfield__label" for="showname">Show name...</label>
+  </div>
+    </form>
+    <div class="welcome_msg">Enter show name in field.</div>
+    <div class="content">
+        <img class="avatar" src=""/>
+        <div class="title_genre">
+                 <h1></h1>
+                 <div class="genre"></div>
+
+        </div>
+        <div class="main_content">
+         <div class="ratings"></div><hr>
+         <div class="synopsis"></div><hr>
+         <div class="language"></div><hr>
+         <div class="premiered"></div><hr>
+         <div class="runtime"></div><hr>
+         <div class="type"></div><hr>
+         <div class="status"></div><hr>
+        <div class="links"></div>
+        <div class="empty"></div>
+        
+       
+    </div>
+</div>
+
+<div class="scrollup" title="Go to top" >
+    <button style="background-color:'#EB1537'"class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+         <i class="material-icons">arrow_upward</i>
+       </button>
+  </div>
+
+</body>
+ 
+</html>
