@@ -39,11 +39,13 @@
     }
 
     $('.synopsis').html(data.summary);
-    $('.language').html("<div class='title'>Language </div>"+data.language);
+    $('.item1').html("<div class='title'>Language </div>"+data.language);
+    $('.item2').html("<div class='title'>Runtime </div>"+data.runtime+" mins");
+    $('.item3').html("<div class='title'>Type </div>"+data.type);
+    $('.item4').html("<div class='title'>Status </div>"+data.status);
+
     $('.premiered').html("<div class='title'>Premiered on </div>"+data.premiered);
-    $('.runtime').html("<div class='title'>Runtime </div>"+data.runtime+" mins");
-    $('.type').html("<div class='title'>Type </div>"+data.type);
-    $('.status').html("<div class='title'>Status </div>"+data.status);
+   
     $('.links').html("<a target='_blank' href='"+data.officialSite+"'><img src='website.png'></a><a target='_blank' href='"+data.url+"'><img src='tvmaze.png'></a>");
     $('.content').fadeIn();
     $('.welcome_msg').css("display","none");
